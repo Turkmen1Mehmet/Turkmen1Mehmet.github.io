@@ -43,19 +43,73 @@ window.jQuery(document).ready(function (_jquery) {
         event.preventDefault();
         event.stopPropagation();
 
-        const el = $("input[name=quantity]");
-        const oldValue = parseInt(el.val());
+        if ($(event.target).hasClass("button hollow circle dokuma")) {
+            const el = $("input[name=quantitydokuma]");
+            const oldValue = parseInt(el.val());
 
-        isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+            isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+        } else if ($(event.target).hasClass("button hollow circle orme")) {
+            const el = $("input[name=quantityorme]");
+            const oldValue = parseInt(el.val());
+
+            isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+        } else if ($(event.target).hasClass("button hollow circle denim")) {
+            const el = $("input[name=quantitydenim]");
+            const oldValue = parseInt(el.val());
+
+            isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+        } else if ($(event.target).hasClass("button hollow circle triko")) {
+            const el = $("input[name=quantitytriko]");
+            const oldValue = parseInt(el.val());
+
+            isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+        } else if ($(event.target).hasClass("button hollow circle pu")) {
+            const el = $("input[name=quantitypu]");
+            const oldValue = parseInt(el.val());
+
+            isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+        } else if ($(event.target).hasClass("button hollow circle brode")) {
+            const el = $("input[name=quantitybrode]");
+            const oldValue = parseInt(el.val());
+
+            isNaN(oldValue) ? el.val(0) : el.val(oldValue + 1);
+        }
     }
 
     function decreaseCounter(event) {
         event.preventDefault();
         event.stopPropagation();
 
-        const el = $("input[name=quantity]");
-        const oldValue = parseInt(el.val());
+        if ($(event.target).hasClass("button hollow circle dokuma")) {
+            const el = $("input[name=quantitydokuma]");
+            const oldValue = parseInt(el.val());
 
-        (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+            (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+        } else if ($(event.target).hasClass("button hollow circle orme")) {
+            const el = $("input[name=quantityorme]");
+            const oldValue = parseInt(el.val());
+
+            (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+        } else if ($(event.target).hasClass("button hollow circle denim")) {
+            const el = $("input[name=quantitydenim]");
+            const oldValue = parseInt(el.val());
+
+            (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+        } else if ($(event.target).hasClass("button hollow circle triko")) {
+            const el = $("input[name=quantitytriko]");
+            const oldValue = parseInt(el.val());
+
+            (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+        } else if ($(event.target).hasClass("button hollow circle pu")) {
+            const el = $("input[name=quantitypu]");
+            const oldValue = parseInt(el.val());
+
+            (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+        } else if ($(event.target).hasClass("button hollow circle brode")) {
+            const el = $("input[name=quantitybrode]");
+            const oldValue = parseInt(el.val());
+
+            (!isNaN(oldValue) && oldValue > 0) ? el.val(oldValue - 1) : el.val(0);
+        }
     }
 });
