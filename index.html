@@ -1,247 +1,144 @@
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Online counter"/>
-  <meta name="author" content="Memoli"/>
-
-  <title>Online counter</title>
-
-  <link href="css/font-awesome.css" rel="stylesheet"/>
-  <link href="css/app.css" rel="stylesheet"/>
-  <link href="css/body.css" rel="stylesheet"/>
-  <link href="css/layout.css" rel="stylesheet"/>
-  <link href="css/plus-minus-input.css" rel="stylesheet"/>
-  <link href="css/gh-fork-ribbon.css" rel="stylesheet"/>
-</head>
+<!DOCTYPE html>
+<html>
 <body>
 
-<div class="row" id="delete_01">
-  <div class="columns">
-    <h2 class="align-center">Dokuma</h2>
-  </div>
-</div>
-<div class="row" id="delete_03">&nbsp;</div>
+<input type="text" id="trendadi1" name="trendadi1" value="TREND&KUMAŞ" style="font-size: 60px;text-align:center;"><br>
+<button onclick="decreasetrend1()" style="font-size: 70px;text-align:center;height:90px;width:90px">-</button>
+<input class="input-number" id="trend1" type="number" value="0" min="0" max="10000" style="font-size: 70px;text-align:center;">
 
-<div class="row" id="counter">
-  <div class="columns">
-    <div class="demo-center">
-      <div class="input-group-dokuma plus-minus-input">
-        <div class="input-group-button-dokuma">
-          <button type="button" class="button hollow circle dokuma" data-quantity="minus" data-field="quantitydokuma">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
+<button onclick="increasetrend1()" style="font-size: 70px;text-align:center;height:90px;width:90px">+</button>
+<button onclick="clearResulttrend1()" style="font-size: 30px;text-align:center;">RESET</button><br>
 
-        <input
-          class="input-group-field-dokuma"
-          id="input-group-field-dokuma"
-          type="number"
-          name="quantitydokuma"
-          value="0"
-          min=0
-          oninput="validity.valid||(value='0');"
-        />
+<input type="text" id="trendadi2" name="trendadi2" value="TREND&KUMAŞ" style="font-size: 60px;text-align:center;"><br>
+<button onclick="decreasetrend2()" style="font-size: 70px;text-align:center;height:90px;width:90px">-</button>
+<input class="input-number" id="trend2" type="number" value="0" min="0" max="10000" style="font-size: 70px;text-align:center;">
 
-        <div class="input-group-button-dokuma">
-          <button type="button" class="button hollow circle dokuma" data-quantity="plus" data-field="quantitydokuma">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<button onclick="increasetrend2()" style="font-size: 70px;text-align:center;height:90px;width:90px">+</button>
+<button onclick="clearResulttrend2()" style="font-size: 30px;text-align:center;">RESET</button><br>
 
-<div class="row" id="delete_01">
-  <div class="columns">
-    <h2 class="align-center">Örme</h2>
-  </div>
-</div>
-<div class="row" id="delete_03">&nbsp;</div>
+<input type="text" id="trendadi3" name="trendadi3" value="TREND&KUMAŞ" style="font-size: 60px;text-align:center;"><br>
+<button onclick="decreasetrend3()" style="font-size: 70px;text-align:center;height:90px;width:90px">-</button>
+<input class="input-number" id="trend3" type="number" value="0" min="0" max="10000" style="font-size: 70px;text-align:center;">
 
-<div class="row" id="counter">
-  <div class="columns">
-    <div class="demo-center">
-      <div class="input-group-orme plus-minus-input">
-        <div class="input-group-button-orme">
-          <button type="button" class="button hollow circle orme" data-quantity="minus" data-field="quantityorme">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
+<button onclick="increasetrend3()" style="font-size: 70px;text-align:center;height:90px;width:90px">+</button>
+<button onclick="clearResulttrend3()" style="font-size: 30px;text-align:center;">RESET</button><br>
 
-        <input
-          class="input-group-field-orme"
-          id="input-group-field-orme"
-          type="number"
-          name="quantityorme"
-          value="0"
-          min=0
-          oninput="validity.valid||(value='0');"
-        />
+<input type="text" id="trendadi4" name="trendadi4" value="TREND&KUMAŞ" style="font-size: 60px;text-align:center;"><br>
+<button onclick="decreasetrend4()" style="font-size: 70px;text-align:center;height:90px;width:90px">-</button>
+<input class="input-number" id="trend4" type="number" value="0" min="0" max="10000" style="font-size: 70px;text-align:center;">
 
-        <div class="input-group-button-orme">
-          <button type="button" class="button hollow circle orme" data-quantity="plus" data-field="quantityorme">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<button onclick="increasetrend4()" style="font-size: 70px;text-align:center;height:90px;width:90px">+</button>
+<button onclick="clearResulttrend4()" style="font-size: 30px;text-align:center;">RESET</button><br>
 
-<div class="row" id="delete_01">
-  <div class="columns">
-    <h2 class="align-center">Denim</h2>
-  </div>
-</div>
-<div class="row" id="delete_03">&nbsp;</div>
+<input type="text" id="trendadi5" name="trendadi5" value="TREND&KUMAŞ" style="font-size: 60px;text-align:center;"><br>
+<button onclick="decreasetrend5()" style="font-size: 70px;text-align:center;height:90px;width:90px">-</button>
+<input class="input-number" id="trend5" type="number" value="0" min="0" max="10000" style="font-size: 70px;text-align:center;">
 
-<div class="row" id="counter">
-  <div class="columns">
-    <div class="demo-center">
-      <div class="input-group-denim plus-minus-input">
-        <div class="input-group-button-denim">
-          <button type="button" class="button hollow circle denim" data-quantity="minus" data-field="quantitydenim">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
+<button onclick="increasetrend5()" style="font-size: 70px;text-align:center;height:90px;width:90px">+</button>
+<button onclick="clearResulttrend5()" style="font-size: 30px;text-align:center;">RESET</button><br>
 
-        <input
-          class="input-group-field-denim"
-          id="input-group-field-denim"
-          type="number"
-          name="quantitydenim"
-          value="0"
-          min=0
-          oninput="validity.valid||(value='0');"
-        />
+<input type="text" id="trendadi6" name="trendadi6" value="TREND&KUMAŞ" style="font-size: 60px;text-align:center;"><br>
+<button onclick="decreasetrend6()" style="font-size: 70px;text-align:center;height:90px;width:90px">-</button>
+<input class="input-number" id="trend6" type="number" value="0" min="0" max="10000" style="font-size: 70px;text-align:center;">
 
-        <div class="input-group-button-denim">
-          <button type="button" class="button hollow circle denim" data-quantity="plus" data-field="quantitydenim">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<button onclick="increasetrend6()" style="font-size: 70px;text-align:center;height:90px;width:90px">+</button>
+<button onclick="clearResulttrend6()" style="font-size: 30px;text-align:center;">RESET</button><br>
 
-<div class="row" id="delete_01">
-  <div class="columns">
-    <h2 class="align-center">Triko</h2>
-  </div>
-</div>
-<div class="row" id="delete_03">&nbsp;</div>
+<script>
+function increasetrend1() {
+  document.getElementById("trend1").stepUp();
+}
+</script>
+<script>
+function decreasetrend1() {
+  document.getElementById("trend1").stepDown();
+}
+</script>
+<script>
+function clearResulttrend1(){
+  document.getElementById("trend1").value = '0'
+}
+</script>
 
-<div class="row" id="counter">
-  <div class="columns">
-    <div class="demo-center">
-      <div class="input-group-triko plus-minus-input">
-        <div class="input-group-button-triko">
-          <button type="button" class="button hollow circle triko" data-quantity="minus" data-field="quantitytriko">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
+<script>
+  function increasetrend2() {
+    document.getElementById("trend2").stepUp();
+  }
+  </script>
+  <script>
+  function decreasetrend2() {
+    document.getElementById("trend2").stepDown();
+  }
+  </script>
+  <script>
+  function clearResulttrend2(){
+    document.getElementById("trend2").value = '0'
+  }
+  </script>
 
-        <input
-          class="input-group-field-triko"
-          id="input-group-field-triko"
-          type="number"
-          name="quantitytriko"
-          value="0"
-          min=0
-          oninput="validity.valid||(value='0');"
-        />
+<script>
+  function increasetrend3() {
+    document.getElementById("trend3").stepUp();
+  }
+  </script>
+  <script>
+  function decreasetrend3() {
+    document.getElementById("trend3").stepDown();
+  }
+  </script>
+  <script>
+  function clearResulttrend3(){
+    document.getElementById("trend3").value = '0'
+  }
+  </script>
 
-        <div class="input-group-button-triko">
-          <button type="button" class="button hollow circle triko" data-quantity="plus" data-field="quantitytriko">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<script>
+  function increasetrend4() {
+    document.getElementById("trend4").stepUp();
+  }
+  </script>
+  <script>
+  function decreasetrend4() {
+    document.getElementById("trend4").stepDown();
+  }
+  </script>
+  <script>
+  function clearResulttrend4(){
+    document.getElementById("trend4").value = '0'
+  }
+  </script>
 
-<div class="row" id="delete_01">
-  <div class="columns">
-    <h2 class="align-center">Pu</h2>
-  </div>
-</div>
-<div class="row" id="delete_03">&nbsp;</div>
+<script>
+  function increasetrend5() {
+    document.getElementById("trend5").stepUp();
+  }
+  </script>
+  <script>
+  function decreasetrend5() {
+    document.getElementById("trend5").stepDown();
+  }
+  </script>
+  <script>
+  function clearResulttrend5(){
+    document.getElementById("trend5").value = '0'
+  }
+  </script>
 
-<div class="row" id="counter">
-  <div class="columns">
-    <div class="demo-center">
-      <div class="input-group-pu plus-minus-input">
-        <div class="input-group-button-pu">
-          <button type="button" class="button hollow circle pu" data-quantity="minus" data-field="quantitypu">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
-
-        <input
-          class="input-group-field-pu"
-          id="input-group-field-pu"
-          type="number"
-          name="quantitypu"
-          value="0"
-          min=0
-          oninput="validity.valid||(value='0');"
-        />
-
-        <div class="input-group-button-pu">
-          <button type="button" class="button hollow circle pu" data-quantity="plus" data-field="quantitypu">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row" id="delete_01">
-  <div class="columns">
-    <h2 class="align-center">Brode</h2>
-  </div>
-</div>
-<div class="row" id="delete_03">&nbsp;</div>
-
-<div class="row" id="counter">
-  <div class="columns">
-    <div class="demo-center">
-      <div class="input-group-brode plus-minus-input">
-        <div class="input-group-button-brode">
-          <button type="button" class="button hollow circle brode" data-quantity="minus" data-field="quantitybrode">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
-
-        <input
-          class="input-group-field-brode"
-          id="input-group-field-brode"
-          type="number"
-          name="quantitybrode"
-          value="0"
-          min=0
-          oninput="validity.valid||(value='0');"
-        />
-
-        <div class="input-group-button-brode">
-          <button type="button" class="button hollow circle brode" data-quantity="plus" data-field="quantitybrode">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="js/jquery.js"></script>
-<script src="js/plus-minus-input.js"></script>
+<script>
+  function increasetrend6() {
+    document.getElementById("trend6").stepUp();
+  }
+  </script>
+  <script>
+  function decreasetrend6() {
+    document.getElementById("trend6").stepDown();
+  }
+  </script>
+  <script>
+  function clearResulttrend6(){
+    document.getElementById("trend6").value = '0'
+  }
+  </script>
 
 </body>
 </html>
