@@ -11,6 +11,19 @@
     }
   </style>
   <title>Online counter</title>
+  <style>
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  </style>
 
 </head>
 
@@ -58,6 +71,12 @@
 <button onclick="increasetrend6()" style="font-size: 80px;text-align:center;height:90px;width:90px">+</button>
 <button onclick="clearResulttrend6()" style="font-size: 50px;text-align:center;">RESET</button><br>
 </center>
+<script>
+function darkFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+</script>
 <script>
 function increasetrend1() {
   document.getElementById("trend1").stepUp();
